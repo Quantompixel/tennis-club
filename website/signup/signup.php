@@ -37,7 +37,7 @@ session_start();
             <input type="phone" name="phone" placeholder="..." id="phone">
         </div>
 
-        <input type="submit">
+        <input type="submit" value="Registrieren">
     </form>
 </body>
 </html>

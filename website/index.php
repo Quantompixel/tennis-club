@@ -23,7 +23,7 @@ session_start();
             </div>
         </form>
 
-        <form action="register/signup.php">
+        <form action="signup/signup.php">
             <input type="submit" value="Registrieren">
         </form>
     </main>

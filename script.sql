@@ -14,7 +14,7 @@ CREATE TABLE club_member
 CREATE TABLE court
 (
     court_id          INTEGER PRIMARY KEY AUTO_INCREMENT,
-    court_description VARCHAR(255),
+    description VARCHAR(255),
     surface           VARCHAR(50) NOT NULL,
     is_inside         BOOL
 );
