@@ -16,7 +16,7 @@ $statement->execute();
 
 while ($court = $statement->fetch()) {
     echo "<div>";
-    echo "<a href='reservation/?court=".$court['court_id']."'>";
+    echo "<a href='../reservation/?court=".$court['court_id']."'>";
     echo $court['description'].": surface - ".$court['surface'];
     echo "</a>";
     echo "</div>";
