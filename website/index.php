@@ -10,10 +10,10 @@ session_start();
 </head>
 <body>
 <header>
-
+    <h1>Anmelden</h1>
 </header>
 <main>
-    <div class="wrapper">
+    <section class="wrapper">
         <form action="submit.php" method="get" class="login">
             <div class="form-elem">
                 <label for="username">Benutzername: </label><br>
@@ -27,11 +27,26 @@ session_start();
                 <input type="submit" value="Login">
             </div>
         </form>
-
+        <section class="error">
+            <?php
+            $error = empty($_REQUEST['error']) ? 'empty' : $_REQUEST['error'];
+            switch ($error) {
+                case 2:
+                    echo "<p>Falsche Passwort oder Account nicht gefunden.</p>";
+                    break;
+                case 3:
+                    echo "<p>Es sind nicht alle Felder ausgefüllt.</p>";
+                    break;
+            }
+            ?>
+        </section>
+        <hr>
         <form action="signup/signup.php" class="signup">
-        <input type="submit" value="Registrieren">
+            <label for="signup">Noch keinen Account?</label>
+            <input type="submit" id="signup" value="Registrieren">
         </form>
-    </div>
+
+    </section>
 </main>
 <footer>
 
@@ -39,3 +54,10 @@ session_start();
 </body>
 </html>
 
+<?php
+function check($param)
+{
+    return isset($param) && $param != '';
+}
+
+?>
