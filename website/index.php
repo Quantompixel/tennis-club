@@ -19,8 +19,12 @@ session_start();
                 <input type="password" id="password" name="password">
             </div >
             <div class="form-elem">
-                <input type="submit">
+                <input type="submit" value="Login">
             </div>
+        </form>
+
+        <form action="register/signup.php">
+            <input type="submit" value="Registrieren">
         </form>
     </main>
 <?php
