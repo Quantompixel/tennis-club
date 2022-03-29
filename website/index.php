@@ -32,7 +32,7 @@ session_start();
             $error = empty($_REQUEST['error']) ? 'empty' : $_REQUEST['error'];
             switch ($error) {
                 case 2:
-                    echo "<p>Falsche Passwort oder Account nicht gefunden.</p>";
+                    echo "<p>Falsches Passwort oder Account nicht gefunden.</p>";
                     break;
                 case 3:
                     echo "<p>Es sind nicht alle Felder ausgefüllt.</p>";
@@ -42,7 +42,7 @@ session_start();
         </section>
         <hr>
         <form action="signup/signup.php" class="signup">
-            <label for="signup">Noch keinen Account?</label>
+            <label class="signup-label" for="signup">Noch keinen Account?</label>
             <input type="submit" id="signup" value="Registrieren">
         </form>
 

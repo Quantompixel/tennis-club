@@ -40,6 +40,8 @@ session_start();
                 <input type="phone" name="phone" id="phone">
             </div>
 
+            <hr>
+
             <input type="submit" value="Registrieren">
         </form>
     </section>
