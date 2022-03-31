@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    width: 90vw;
+    height: 90%;
+    background: lightcoral;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+main section .court {
+    margin: auto;
+    height: 100%;
+}
+
+main section .court figure img {
+    width: 90vw;
+}
