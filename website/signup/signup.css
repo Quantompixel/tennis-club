@@ -62,7 +62,7 @@ input[type="submit"] {
     margin-top: 1em;
 }
 
-.error p{
+.error {
     color: lightcoral;
     border-bottom: solid;
     border-bottom-style: dashed;
@@ -74,7 +74,7 @@ footer {
     background: lightgray;
 }
 
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) {
     main {
         flex-direction: row;
         justify-content: center;
