@@ -30,3 +30,19 @@ main section .court {
 main section .court figure img {
     width: 90vw;
 }
+
+.scroll-buttons .scroll-button {
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+}
+
+#scroll-left {
+    top: 50vh;
+    left: 2em;
+}
+
+#scroll-right {
+    top: 50vh;
+    right: 2em;
+}

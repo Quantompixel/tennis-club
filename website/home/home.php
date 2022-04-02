@@ -45,6 +45,11 @@ session_start();
             </div>
         </div>
     </section>
+
+    <nav class="scroll-buttons">
+        <button class="scroll-button" id="scroll-left"><</button>
+        <button class="scroll-button" id="scroll-right">></button>
+    </nav>
 </main>
 
 <?php
@@ -61,6 +66,8 @@ while ($court = $statement->fetch()) {
     echo "</div>";
 }
 ?>
+
+<script src="script.js"></script>
 
 </body>
 </html>
